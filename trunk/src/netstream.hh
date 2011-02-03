@@ -116,8 +116,9 @@ class NetStream
 	// BASIC CLASS METHODS FOR MANIPULATORS
 	NetStream& _my_pid(int* pid);			// Returns the process ID of the calling process
 	NetStream& _wait(const int stream_type);	// Wait for an incoming message in the specified stream
-        NetStream& _set_target(const int p);		// Stablish "p" as the default receiver
-        NetStream& _get_target(int* p);			// Get into "p" the default receiver
+    NetStream& _wait2(const int stream_type, int& tipo);
+    NetStream& _set_target(const int p);		// Stablish "p" as the default receiver
+    NetStream& _get_target(int* p);			// Get into "p" the default receiver
 	NetStream& _set_source(const int p); 		// Stablish "p" as the default transmitter
  	NetStream& _get_source(int* p);   		// Get into "p" the default transmitter
 	// AUXILIAR PUBLIC METHODS FOR ALLOWING EASY MANAGEMENTS OF NETSTREAMS
