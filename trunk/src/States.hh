@@ -10,7 +10,7 @@
 #define STATE_CENTER 1
 
 #include "Rlist.h"
-#include <iostream.h>
+#include <iostream>
 
 class StateCenter;
 

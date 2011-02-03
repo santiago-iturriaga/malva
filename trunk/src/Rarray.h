@@ -7,8 +7,10 @@
 
 #ifndef ARRAY_INC
 #define ARRAY_INC 1
-#include <iostream.h>
+#include <iostream>
 #include <assert.h>
+
+using namespace std;
 
 template<class E1> class Rarray
 {

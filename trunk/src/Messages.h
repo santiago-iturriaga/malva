@@ -14,10 +14,12 @@
 #define MAX_BUFFER 200
 #endif
 
-#include <iostream.h>
+#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+using namespace std;
 
 inline void show_message(int value)
 {
