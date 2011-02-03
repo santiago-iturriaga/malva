@@ -1,6 +1,6 @@
 /******************************************************************************
 ***									    ***
-*** Este template sirve para el manejo de listas dinámicas		    ***
+*** Este template sirve para el manejo de listas dinï¿½micas		    ***
 ***									    ***
 ******************************************************************************/
 
@@ -8,7 +8,7 @@
 #define LIST_INC 1
 #include <iostream>
 #include <stdlib.h>
-#include <Mallba/Messages.h>
+#include <Messages.h>
 
 using namespace std;
 
