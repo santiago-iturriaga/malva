@@ -184,15 +184,33 @@ NetStream& NetStream::_barrier(void)
 	return (*this);
 }
 // Wait for an incoming message in any input stream
-NetStream& NetStream::_wait(const int stream_type)     	// class
-{	int rvalue;
-	MPI_Status status;
-	assert(stream_type==regular||stream_type==packed||stream_type==any);
-	if( (stream_type==packed) && (pending_input_packet) )
-		return (*this);		// wait befor packet_begin when already received
-	rvalue = MPI_Probe(default_source,stream_type,my_communicator,&status);
-	assert(rvalue==MPI_SUCCESS);
-	return (*this);
+NetStream& NetStream::_wait(const int stream_type)      // class
+{   
+    int rvalue;
+    MPI_Status status;
+    assert(stream_type==regular||stream_type==packed||stream_type==any);
+    if( ((stream_type==packed) || (stream_type==any) )&& (pending_input_packet) )
+    //if( (stream_type==packed) && (pending_input_packet) )
+        return (*this);     // wait befor packet_begin when already received
+    rvalue = MPI_Probe(default_source,stream_type,my_communicator,&status);
+    assert(rvalue==MPI_SUCCESS);
+    return (*this);
+}
+
+NetStream& NetStream::_wait2(const int stream_type, int& tipo)      // class
+{   
+    int rvalue;
+    MPI_Status status;
+    assert(stream_type==regular||stream_type==packed||stream_type==any);
+    if( ((stream_type==packed) || (stream_type==any) )&& (pending_input_packet) )
+    //if( (stream_type==packed) && (pending_input_packet) )
+        return (*this);     // wait befor packet_begin when already received
+    rvalue = MPI_Probe(default_source,stream_type,my_communicator,&status);
+    assert(rvalue==MPI_SUCCESS);
+    if (status.MPI_SOURCE == 0){
+        tipo = 1;
+    }
+    return (*this);
 }
 NetStream& __wait(NetStream& n, const int stream_type) 	// helper
 {
