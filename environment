@@ -5,11 +5,9 @@ MALLBA_INC=${MALLBA_DIR}/inc
 MALLBA_LIB=${MALLBA_DIR}/lib
 MALLBA_SRC=${MALLBA_DIR}/src
 MALLBA_REP=${MALLBA_DIR}/rep
-MPI_BIN=/home/${whoami}/mpich-1.2.7p1/bin
-#MPI_BIN=/usr/local/mpich/bin
-#MPI_BIN=mpich_path
+MPI_BIN=/usr/bin
 
-CXX=$(MPI_BIN)/mpiCC
+CXX=$(MPI_BIN)/mpic++
 RUN=$(MPI_BIN)/mpirun
 #other options: -g for debugging and -pg for profiling
 CPPFLAGS=-I$(MALLBA_INC) -Wno-deprecated -O3

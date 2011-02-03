@@ -6,9 +6,11 @@
 
 #ifndef LIST_INC
 #define LIST_INC 1
-#include <iostream.h>
+#include <iostream>
 #include <stdlib.h>
 #include <Mallba/Messages.h>
+
+using namespace std;
 
 template<class E> class Rlist_item
 {
