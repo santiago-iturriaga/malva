@@ -21,4 +21,4 @@ WAN:
 	$(RUN) -v  -p4pg pgfileWan MainWan
 
 SEQ:
-	./MainSeq newGA.cfg ../../../ProblemInstances/ONEMAX-instances/onemax10.txt res/sol.txt
+	./MainSeq newGA.cfg ../../ProblemInstances/ONEMAX-instances/onemax10.txt res/sol.txt
