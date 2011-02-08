@@ -15,7 +15,7 @@ MainWan: CHC.req.o CHC.pro.o MainWan.o
 	$(CXX) $(LDFLAGS) $^ $(LOADLIBES) $(CPPFLAGS) -o $@
 
 LAN:
-	$(RUN) -np 4 ./MainLan Config.cfg
+	$(RUN) -np 10 ./MainLan Config.cfg
 
 WAN:
 	$(RUN) -v  -p4pg pgfileWan MainWan
