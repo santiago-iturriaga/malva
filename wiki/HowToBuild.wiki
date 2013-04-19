@@ -10,7 +10,7 @@
 
  * Edit the malva/environments file.
 
- ** Configure MALLBA_DIR with the full path to the malva source code 
+   * Configure MALLBA_DIR with the full path to the malva source code 
 
  * Editar el archivo "environments"
   - MALLBA_DIR y MPI_BIN
