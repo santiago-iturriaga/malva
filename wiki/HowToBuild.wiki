@@ -8,10 +8,11 @@
 
  * Checkout malva source code: svn checkout https://malva.googlecode.com/svn/trunk/ malva
 
- * Edit the malva/environments file.
+ * Edit the {{{malva/environments}}} file.
    * Set the full path to the malva source code in MALLBA_DIR
    * Set the full path to the mpich binaries in MPI_BIN
  * Execute "make libs"
+   * This command will generate the MALLBA binary in MALLBA_DIR/lib
    * The command "make all" will fail since not all the metaheuristics were upgraded from the old MALLBA code
 
  * Editar el archivo "environments"
