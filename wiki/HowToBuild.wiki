@@ -19,7 +19,7 @@
 
 The new fully-functional algorithms are available at *{{{MALLBA_DIR}}}/rep_new*. While the original (old) algorithms are available at *{{{MALLBA_DIR}}}/rep*.
 
-The only fully-functional algorithms are the *newGA* and the *CHC*.
+The only new fully-functional algorithms are the *newGA* and the *CHC*.
 
 In order to test the ONE-MAX problem with either the *newGA* or the *CHC*, do the following:
 
