@@ -24,6 +24,6 @@ The only fully-functional algorithms are the *newGA* and the *CHC*.
 In order to test the ONE-MAX problem with either the *newGA* or the *CHC*, do the following:
 
  * Change directory to *{{{MALLBA_DIR/rep_new/CHC}}}* or *{{{MALLBA_DIR/rep_new/newGA}}}*
- * Execute *{{{make}}}*
+ * Execute *{{{make}}}* to build the executables
  * Execute *{{{make SEQ}}}* in order to execute the sequential version
  * Execute *{{{make LAN}}}* in order to execute the parallel version
