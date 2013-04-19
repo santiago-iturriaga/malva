@@ -4,7 +4,7 @@
 
  * MPICH-2 or MPICH-3
 
-==Compiling malva==
+==Compiling the malva library==
 
  * Checkout malva source code: *{{{svn checkout https://malva.googlecode.com/svn/trunk/ malva}}}*
 
@@ -15,11 +15,15 @@
    * This command will generate the *{{{MALLBA}}}* binary in *{{{MALLBA_DIR/lib}}}*
    * The command *{{{make all}}}* will *fail* since not all the metaheuristics were upgraded from the old MALLBA code
 
- * Editar el archivo "environments"
-  - MALLBA_DIR y MPI_BIN
- * Ejecutar "make libs"
-  - Eso generará la biblioteca de Mallba en MALLBA_DIR/lib
- * Ir a MALLBA_DIR/rep_new/CHC
-  - Ejecutar "make"
-  - Ejecutar "make SEQ" o "make LAN" para ejecutar
- * Ir a MALLBA_DIR/rep_new/newGA
+==Testing an algorithm==
+
+The new fully-functional algorithms are available at *{{{MALLBA_DIR}}}/rep_new*. While the original (old) algorithms are available at *{{{MALLBA_DIR}}}/rep*.
+
+The only fully-functional algorithms are the *newGA* and the *CHC*.
+
+In order to test the ONE-MAX problem with either the *newGA* or the *CHC*, do the following:
+
+ * Change directory to *{{{MALLBA_DIR/rep_new/CHC}}}* or *{{{MALLBA_DIR/rep_new/newGA}}}*
+ * Execute *{{{make}}}*
+ * Execute *{{{make SEQ}}}* in order to execute the sequential version
+ * Execute *{{{make LAN}}}* in order to execute the parallel version
