@@ -7,7 +7,9 @@
 ==Compiling malva==
 
 * Checkout malva source code: svn checkout https://malva.googlecode.com/svn/trunk/ malva
+
 * Edit the malva/environments file.
+
 ** Configure MALLBA_DIR with the full path to the malva source code 
 
 * Editar el archivo "environments"
