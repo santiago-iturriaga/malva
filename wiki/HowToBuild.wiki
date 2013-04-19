@@ -1,1 +1,7 @@
-Coming soon...
+=Installing malva=
+
+==Software requirements==
+
+- MPICH-2 (or better)
+
+==Compiling malva==
